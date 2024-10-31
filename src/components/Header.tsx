@@ -16,7 +16,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="text-xl font-semibold text-slate-800">
-            "Research is seeing what everybody else has seen and thinking what nobody else has thought"
+            "Research is formalized curiosity"
           </a>
 
           {/* Desktop Menu */}

@@ -23,7 +23,7 @@ const blogPosts = [
 
 const Blog = () => {
   return (
-    <section id="blog" className="py-16">
+    <section id="blog" className="py-16 bg-gradient-to-tr from-orange-400/10 via-blue-500/10 to-orange-400/10">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
           Latest Posts

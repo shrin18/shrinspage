@@ -19,7 +19,7 @@ const photos = [
 
 const Photography = () => {
   return (
-    <section id="photography" className="py-16 bg-slate-50">
+    <section id="photography" className="py-16 bg-gradient-to-tl from-blue-500/10 via-orange-400/10 to-blue-500/10">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
           Photography

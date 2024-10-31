@@ -3,22 +3,22 @@ import { Badge } from "@/components/ui/badge";
 
 const publications = [
   {
-    title: "Machine Learning Applications in Modern Research",
-    conference: "International Conference on AI 2023",
-    description: "An exploration of novel machine learning applications in contemporary research methodologies.",
-    tags: ["Machine Learning", "AI", "Research Methods"],
+    title: "Superoptimization of WebAssembly bytecode",
+    conference: "Companion Proceedings of the 4th International Conference on Art, Science, and Engineering of Programming",
+    description: "We propose the first functional pipeline to support the superoptimization of WebAssembly bytecode.",
+    tags: ["Web Assembly", "AI", "Research Methods"],
   },
   {
-    title: "The Future of Human-Computer Interaction",
-    conference: "HCI Summit 2023",
-    description: "A comprehensive study on emerging trends in human-computer interaction and their implications.",
-    tags: ["HCI", "UX", "Technology"],
+    title: "Support for Emulated 5G-System Bridge in a Time-Sensitive Bridged Network",
+    conference: "KTH Master Thesis",
+    description: "we implement a 5G system integration with TSN using a discrete event network simulator (NS-3)",
+    tags: ["TSN", "5G", "Technology"],
   },
   {
-    title: "Data-Driven Decision Making in Academia",
-    conference: "Data Science Conference 2022",
-    description: "Analysis of how data-driven approaches are transforming academic research and decision-making processes.",
-    tags: ["Data Science", "Academia", "Decision Making"],
+    title: "Optimal Robot Localisation Techniques for Real World Scenarios",
+    conference: "2018 Fourth International Conference on Computing Communication Control and Automation (ICCUBEA)",
+    description: "The following paper is a thorough review of our research based on the localisation of robots.",
+    tags: ["Robotics", "Academia", "Decision Making"],
   },
 ];
 

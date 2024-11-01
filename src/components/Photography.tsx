@@ -1,7 +1,7 @@
 const photos = [
   {
     url: "https://raw.githubusercontent.com/shrin18/Cpractise/master/pexels-shrinish-donde-1323867-17520185.jpg",
-    title: "Fjors: Norway",
+    title: "Fjords: Norway",
   },
   {
     url: "https://raw.githubusercontent.com/shrin18/Cpractise/master/pexels-shrinish-donde-1323867-18145283.jpg",
@@ -42,6 +42,19 @@ const Photography = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-8 text-center">
+          <p className="text-lg text-slate-700">
+            For more such photos, follow me on Pexels:{" "}
+            <a
+              href="https://www.pexels.com/@shrinish-donde-1323867/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline font-semibold"
+            >
+              Shrinish Donde
+            </a>
+          </p>
         </div>
       </div>
     </section>

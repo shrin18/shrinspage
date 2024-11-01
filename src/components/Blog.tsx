@@ -5,14 +5,16 @@ const blogPosts = [
     title: "Discovering France's Hidden River Gems - Nice",
     date: "August 8, 2024",
     excerpt: "Uncover the beauty of France's river scenes in Nice, a journey through breathtaking waterways...",
-    imageUrl: "https://drive.google.com/uc?export=view&id=1C2wdhGkxfnFonLEMgxFjwebvoaeGBrUO",
+    imageUrl: "https://raw.githubusercontent.com/shrin18/Cpractise/3f79cb3f6dea7d557946202de26b558d578a53a6/france1.jpg
+",
     link: "https://reachingnewplaces.wordpress.com/2024/08/08/discovering-frances-hidden-river-gems-nice/",
   },
   {
     title: "Croatia: A Gem on the Mediterranean Sea 🌊✨",
     date: "July 18, 2024",
     excerpt: "Exploring Croatia's stunning coastal towns, vibrant culture, and azure waters...",
-    imageUrl: "https://drive.google.com/uc?export=view&id=16cMEJm-69WoQHmw6VnbTCu1OiBAafz8I",
+    imageUrl: "https://raw.githubusercontent.com/shrin18/Cpractise/master/croatia2.png
+",
     link: "https://reachingnewplaces.wordpress.com/2024/07/18/%f0%9f%87%ad%f0%9f%87%b7-croatia-a-gem-on-the-mediterranean-sea-%f0%9f%8c%8a%e2%9c%a8/",
   },
   {

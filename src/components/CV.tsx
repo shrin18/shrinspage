@@ -11,7 +11,7 @@ const CV = () => {
           Click the button below to view my complete CV.
         </p>
         <Button variant="outline" size="lg" className="hover:bg-blue-600 hover:text-white">
-          <a href="path_to_your_full_cv.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="https://raw.githubusercontent.com/shrin18/Cpractise/master/Modern_CV.pdf" target="_blank" rel="noopener noreferrer">
             Click Here for CV
           </a>
         </Button>

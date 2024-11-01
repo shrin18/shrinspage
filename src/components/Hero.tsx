@@ -5,23 +5,26 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
+import { useForm } from "react-hook-form";
 
 const Hero = () => {
   const { toast } = useToast();
+  const form = useForm({
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+    },
+  });
 
   // Google Form URL for submissions
-  const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScRUcoy2vnIgMGL2xOMqWM1pgJoy_HTSi9WzUTo_9eAjIj8kw/viewform';
+  const googleFormUrl = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse'; // Replace with your Google Form URL
 
-  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault(); // Prevent default form submission behavior
-
-    // Create a FormData object from the form fields
-    const formData = new FormData(event.currentTarget);
-    
-    // Append additional fields if necessary
-    formData.append('entry.XXXXXX', formData.get('name') as string); // Replace 'entry.XXXXXX' with the correct entry ID for your name field
-    formData.append('entry.YYYYYY', formData.get('email') as string); // Replace 'entry.YYYYYY' with the correct entry ID for your email field
-    formData.append('entry.ZZZZZZ', formData.get('message') as string); // Replace 'entry.ZZZZZZ' with the correct entry ID for your message field
+  const onSubmit = (data) => {
+    const formData = new FormData();
+    formData.append('entry.XXXXXX', data.name); // Replace 'entry.XXXXXX' with the ID for the name field
+    formData.append('entry.YYYYYY', data.email); // Replace 'entry.YYYYYY' with the ID for the email field
+    formData.append('entry.ZZZZZZ', data.message); // Replace 'entry.ZZZZZZ' with the ID for the message field
 
     // Send the form data to Google Forms
     fetch(googleFormUrl, {
@@ -34,8 +37,9 @@ const Hero = () => {
           title: "Message sent!",
           description: "Thank you for your message. I'll get back to you soon.",
         });
+        form.reset(); // Reset the form after successful submission
       })
-      .catch((error) => {
+      .catch(() => {
         toast({
           title: "Error!",
           description: "There was a problem sending your message. Please try again later.",
@@ -65,8 +69,9 @@ const Hero = () => {
                 <DialogHeader>
                   <DialogTitle>Contact Me</DialogTitle>
                 </DialogHeader>
-                <form onSubmit={onSubmit} className="space-y-4">
+                <Form {...form} onSubmit={form.handleSubmit(onSubmit)}>
                   <FormField
+                    control={form.control}
                     name="name"
                     render={({ field }) => (
                       <FormItem>
@@ -79,6 +84,7 @@ const Hero = () => {
                     )}
                   />
                   <FormField
+                    control={form.control}
                     name="email"
                     render={({ field }) => (
                       <FormItem>
@@ -91,6 +97,7 @@ const Hero = () => {
                     )}
                   />
                   <FormField
+                    control={form.control}
                     name="message"
                     render={({ field }) => (
                       <FormItem>
@@ -103,7 +110,7 @@ const Hero = () => {
                     )}
                   />
                   <Button type="submit" className="w-full">Send Message</Button>
-                </form>
+                </Form>
               </DialogContent>
             </Dialog>
             

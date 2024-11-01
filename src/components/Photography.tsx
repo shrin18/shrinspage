@@ -1,19 +1,19 @@
 const photos = [
   {
-    url: "https://raw.githubusercontent.com/shrin18/Cpractise/3f79cb3f6dea7d557946202de26b558d578a53a6/france1.jpg",
-    title: "Technology in Motion",
+    url: "https://raw.githubusercontent.com/shrin18/Cpractise/master/pexels-shrinish-donde-1323867-17520185.jpg",
+    title: "Fjors: Norway",
   },
   {
-    url: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-    title: "Creative Workspace",
+    url: "https://raw.githubusercontent.com/shrin18/Cpractise/blob/master/pexels-shrinish-donde-1323867-18145283.jpg",
+    title: "Nature's beauty",
   },
   {
-    url: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b",
-    title: "Innovation Light",
+    url: "https://raw.githubusercontent.com/shrin18/Cpractise/blob/master/pexels-shrinish-donde-1323867-18888351.jpg",
+    title: "Stockholm Central",
   },
   {
-    url: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c",
-    title: "Digital Tools",
+    url: "https://raw.githubusercontent.com/shrin18/Cpractise/blob/master/pexels-shrinish-donde-1323867-19008605.jpg",
+    title: "Time Lapse",
   },
 ];
 

@@ -4,8 +4,8 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/components/ui/use-toast";
 import { useForm } from "react-hook-form";
+import { useToast } from "@/components/ui/use-toast";
 
 const Hero = () => {
   const { toast } = useToast();
@@ -17,34 +17,13 @@ const Hero = () => {
     },
   });
 
-  // Google Form URL for submissions
-  const googleFormUrl = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse'; // Replace with your Google Form URL
-
-  const onSubmit = (data) => {
-    const formData = new FormData();
-    formData.append('entry.XXXXXX', data.name); // Replace 'entry.XXXXXX' with the ID for the name field
-    formData.append('entry.YYYYYY', data.email); // Replace 'entry.YYYYYY' with the ID for the email field
-    formData.append('entry.ZZZZZZ', data.message); // Replace 'entry.ZZZZZZ' with the ID for the message field
-
-    // Send the form data to Google Forms
-    fetch(googleFormUrl, {
-      method: 'POST',
-      body: formData,
-      mode: 'no-cors', // Use no-cors mode for Google Forms
-    })
-      .then(() => {
-        toast({
-          title: "Message sent!",
-          description: "Thank you for your message. I'll get back to you soon.",
-        });
-        form.reset(); // Reset the form after successful submission
-      })
-      .catch(() => {
-        toast({
-          title: "Error!",
-          description: "There was a problem sending your message. Please try again later.",
-        });
-      });
+  const onSubmit = async (data: any) => {
+    // Show a success toast notification
+    toast({
+      title: "Message sent!",
+      description: "Thank you for your message. I'll get back to you soon.",
+    });
+    form.reset(); // Reset the form after successful submission
   };
 
   return (
@@ -69,47 +48,55 @@ const Hero = () => {
                 <DialogHeader>
                   <DialogTitle>Contact Me</DialogTitle>
                 </DialogHeader>
-                <Form {...form} onSubmit={form.handleSubmit(onSubmit)}>
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Name</FormLabel>
-                        <FormControl>
-                          <Input placeholder="Your name" {...field} required />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Email</FormLabel>
-                        <FormControl>
-                          <Input placeholder="Your email" type="email" {...field} required />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Message</FormLabel>
-                        <FormControl>
-                          <Textarea placeholder="Your message" {...field} required />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <Button type="submit" className="w-full">Send Message</Button>
+                <Form {...form}>
+                  <form 
+                    onSubmit={form.handleSubmit(onSubmit)} 
+                    className="space-y-4"
+                    name="contact" // Use the form name here
+                    method="POST" // Set form method to POST
+                    data-netlify="true" // Enable Netlify form handling
+                  >
+                    <FormField
+                      control={form.control}
+                      name="name"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Name</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Your name" {...field} required />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    <FormField
+                      control={form.control}
+                      name="email"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Email</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Your email" type="email" {...field} required />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    <FormField
+                      control={form.control}
+                      name="message"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Message</FormLabel>
+                          <FormControl>
+                            <Textarea placeholder="Your message" {...field} required />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    <Button type="submit" className="w-full">Send Message</Button>
+                  </form>
                 </Form>
               </DialogContent>
             </Dialog>

@@ -25,7 +25,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
                 <Mail size={16} />
-                <span className="text-slate-400">contact@example.com</span>
+                <span className="text-slate-400">shdonde@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-          <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Shrinish Donde. All rights reserved.</p>
         </div>
       </div>
     </footer>

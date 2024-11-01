@@ -56,6 +56,14 @@ const Publications = () => {
             </Card>
           ))}
         </div>
+        {/* Button for more publications */}
+        <div className="mt-8 text-center">
+          <a href="https://scholar.google.com/citations?user=659bzegAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+            <button className="px-4 py-2 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition">
+              For More Publications
+            </button>
+          </a>
+        </div>
       </div>
     </section>
   );

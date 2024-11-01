@@ -4,15 +4,15 @@ const photos = [
     title: "Fjors: Norway",
   },
   {
-    url: "https://raw.githubusercontent.com/shrin18/Cpractise/blob/master/pexels-shrinish-donde-1323867-18145283.jpg",
+    url: "https://raw.githubusercontent.com/shrin18/Cpractise/master/pexels-shrinish-donde-1323867-18145283.jpg",
     title: "Nature's beauty",
   },
   {
-    url: "https://raw.githubusercontent.com/shrin18/Cpractise/blob/master/pexels-shrinish-donde-1323867-18888351.jpg",
+    url: "https://raw.githubusercontent.com/shrin18/Cpractise/master/pexels-shrinish-donde-1323867-18888351.jpg",
     title: "Stockholm Central",
   },
   {
-    url: "https://raw.githubusercontent.com/shrin18/Cpractise/blob/master/pexels-shrinish-donde-1323867-19008605.jpg",
+    url: "https://raw.githubusercontent.com/shrin18/Cpractise/master/pexels-shrinish-donde-1323867-19008605.jpg",
     title: "Time Lapse",
   },
 ];

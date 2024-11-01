@@ -1,6 +1,6 @@
 const photos = [
   {
-    url: "https://www.pexels.com/photo/19008606/",
+    url: "https://raw.githubusercontent.com/shrin18/Cpractise/3f79cb3f6dea7d557946202de26b558d578a53a6/france1.jpg",
     title: "Technology in Motion",
   },
   {

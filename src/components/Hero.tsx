@@ -28,8 +28,15 @@ const Hero = () => {
 
   return (
     <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br from-orange-500/20 via-blue-600/20 to-orange-500/20">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
+        <div className="w-full md:w-1/3 flex justify-center mb-8 md:mb-0">
+          <img 
+            src="https://raw.githubusercontent.com/shrin18/Cpractise/master/profilepic.jpg" 
+            alt="Shrinish Donde"
+            className="rounded-full w-32 h-32 object-cover border-2 border-white" // Adjust size and border here
+          />
+        </div>
+        <div className="max-w-3xl mx-auto text-center md:text-left md:ml-8">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 animate-fadeIn">
             Shrinish Donde
           </h1>

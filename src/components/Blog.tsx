@@ -19,7 +19,7 @@ const blogPosts = [
     title: "Norway: The Land of Fjords 🇳🇴",
     date: "July 17, 2023",
     excerpt: "Venturing through Norway on a budget, with majestic fjords and awe-inspiring landscapes...",
-    imageUrl: "https://raw.githubusercontent.com/shrin18/Cpractise/blob/master/norway3.png",
+    imageUrl: "https://raw.githubusercontent.com/shrin18/Cpractise/master/norway3.png",
     link: "https://reachingnewplaces.wordpress.com/2023/07/17/norway-%f0%9f%87%b3%f0%9f%87%b4-the-land-of-fjords/",
   },
 ];

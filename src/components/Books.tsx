@@ -3,22 +3,25 @@ import { Star } from 'lucide-react';
 
 const books = [
   {
-    title: "The Structure of Scientific Revolutions",
-    author: "Thomas S. Kuhn",
-    rating: 5,
-    review: "A fundamental text that changed how we think about scientific progress.",
-  },
-  {
-    title: "Thinking, Fast and Slow",
-    author: "Daniel Kahneman",
-    rating: 5,
-    review: "Brilliant insights into how we make decisions and process information.",
-  },
-  {
-    title: "The Design of Everyday Things",
-    author: "Don Norman",
+    title: "Ikigai: The Japanese Secret to a Long and Happy Life",
+    author: "Héctor García and Francesc Miralles",
     rating: 4,
-    review: "Essential reading for understanding human-centered design.",
+    review: "A beautiful guide to finding purpose and meaning in life, inspired by Japanese culture.",
+    link: "https://www.amazon.com/Ikigai-Japanese-Secret-Long-Happy/dp/0143130722"
+  },
+  {
+    title: "Hit Refresh: The Quest to Rediscover Microsoft's Soul",
+    author: "Satya Nadella",
+    rating: 4,
+    review: "An inspiring account of how Satya Nadella transformed Microsoft's culture and brought new energy to the company.",
+    link: "https://www.amazon.com/Hit-Refresh-Rediscover-Microsofts-Empathy/dp/0062652508"
+  },
+  {
+    title: "Wings of Fire: An Autobiography",
+    author: "A.P.J. Abdul Kalam",
+    rating: 5,
+    review: "The inspiring journey of India's 'Missile Man' from humble beginnings to becoming a national hero.",
+    link: "https://www.amazon.com/Wings-Fire-Autobiography-Abdul-Kalam/dp/8173711461"
   },
 ];
 
@@ -33,7 +36,11 @@ const Books = () => {
           {books.map((book, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-xl">{book.title}</CardTitle>
+                <CardTitle className="text-xl">
+                  <a href={book.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    {book.title}
+                  </a>
+                </CardTitle>
                 <p className="text-sm text-slate-500">by {book.author}</p>
               </CardHeader>
               <CardContent>

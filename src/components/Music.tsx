@@ -9,7 +9,7 @@ const Music = () => {
             height="450"
             scrolling="no"
             frameBorder="no"
-            src="https://soundcloud.com/shrinish-donde"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/shrinish-donde&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
           ></iframe>
         </div>
       </div>

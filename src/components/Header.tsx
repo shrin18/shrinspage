@@ -9,6 +9,7 @@ const Header = () => {
     { label: 'Blog', href: '#blog' },
     { label: 'Photography', href: '#photography' },
     { label: 'Reading', href: '#books' },
+    { label: 'Music', href: '#music' }, // Add the Music link here
   ];
 
   return (
@@ -20,7 +21,7 @@ const Header = () => {
             <img 
               src="https://raw.githubusercontent.com/shrin18/Cpractise/master/profilepic.jpg" 
               alt="Shrinish Donde"
-              className="w-10 h-10 rounded-full mr-2" // Adjust size and margin as needed
+              className="w-10 h-10 rounded-full mr-2" 
             />
             <a href="#" className="text-xl font-semibold text-slate-800">
               "Research is formalized curiosity"

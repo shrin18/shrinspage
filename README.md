@@ -1,71 +1,79 @@
-# Welcome to your GPT Engineer project
+# 📚 My Research Portfolio
 
-## Project info
+> "Research is to see what everybody else has seen and to think what nobody else has thought." – Albert Szent-Györgyi
 
-**URL**: https://run.gptengineer.app/projects/dd8dacef-59b5-43bb-9364-e6af81d200ea/improve
+Welcome to my research portfolio! This repository showcases my work, publications, projects, and areas of interest. It serves as a hub to explore my contributions to various fields, including [WebAssembly optimization](https://dl.acm.org/doi/abs/10.1145/3397537.3397567), robotics localization techniques, and 5G network emulation.
 
-## How can I edit this code?
+![Research Banner](https://via.placeholder.com/1000x300.png?text=Research+Portfolio) <!-- Replace with a relevant image link -->
 
-There are several ways of editing your application.
+---
 
-**Use GPT Engineer**
+## 📝 About Me
 
-Simply visit the GPT Engineer project at [GPT Engineer](https://gptengineer.app/projects/dd8dacef-59b5-43bb-9364-e6af81d200ea/improve) and start prompting.
+Hello! I'm a researcher with a passion for combining technology with innovative research methods. My work focuses on advancing [computer science](#publications) and engineering by exploring groundbreaking solutions in [robotics](#robotics) and [network simulations](#network-simulations).
 
-Changes made via gptengineer.app will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 📑 Table of Contents
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in the GPT Engineer UI.
+- [About Me](#about-me)
+- [Research Interests](#research-interests)
+- [Publications](#publications)
+- [Projects](#projects)
+- [Contact](#contact)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🌟 Research Interests
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **WebAssembly Optimization:** Optimizing WebAssembly bytecode for efficient performance in modern web applications.
+- **Robotics Localization:** Enhancing real-world applications through improved robotics localization techniques.
+- **5G & TSN Integration:** Exploring 5G networks and their seamless integration with Time-Sensitive Networking (TSN) for real-time systems.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📄 Publications
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Here are a few of my key publications:
 
-**Edit a file directly in GitHub**
+1. **Superoptimization of WebAssembly bytecode**  
+   *Companion Proceedings of the 4th International Conference on Art, Science, and Engineering of Programming*  
+   [Read the paper](https://dl.acm.org/doi/abs/10.1145/3397537.3397567)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+2. **Support for Emulated 5G-System Bridge in a Time-Sensitive Bridged Network**  
+   *KTH Master Thesis*  
+   [Read the paper](https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1479446&dswid=3429)
 
-**Use GitHub Codespaces**
+3. **Optimal Robot Localization Techniques for Real World Scenarios**  
+   *2018 Fourth International Conference on Computing Communication Control and Automation (ICCUBEA)*  
+   [Read the paper](https://ieeexplore.ieee.org/abstract/document/8697798/)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🛠️ Projects
 
-This project is built with .
+### WebAssembly Superoptimizer
+A project focused on optimizing WebAssembly bytecode using advanced AI techniques to improve performance.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Robotics Localization System
+Developed a robust system for robot localization in dynamic environments.
 
-## How can I deploy this project?
+### 5G and TSN Network Integration
+Explored the integration of 5G technology with Time-Sensitive Networking to support real-time applications.
 
-All GPT Engineer projects can be deployed directly via the GPT Engineer app.
+---
 
-Simply visit your project at [GPT Engineer](https://gptengineer.app/projects/dd8dacef-59b5-43bb-9364-e6af81d200ea/improve) and click on Share -> Publish.
+## 📬 Contact
 
-## I want to use a custom domain - is that possible?
+Feel free to reach out for collaborations or discussions!
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.gptengineer.app/tips-tricks/custom-domain/)
+- **Email:** [your.email@domain.com](mailto:your.email@domain.com)
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
+- **ResearchGate:** [ResearchGate Profile](https://www.researchgate.net/profile/Your_Profile)
+
+---
+
+> "The important thing is not to stop questioning. Curiosity has its own reason for existing." – Albert Einstein
+
+Thank you for visiting my research portfolio!
+

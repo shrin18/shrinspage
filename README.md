@@ -67,9 +67,9 @@ Explored the integration of 5G technology with Time-Sensitive Networking to supp
 
 Feel free to reach out for collaborations or discussions!
 
-- **Email:** [your.email@domain.com](mailto:your.email@domain.com)
-- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
-- **ResearchGate:** [ResearchGate Profile](https://www.researchgate.net/profile/Your_Profile)
+- **Email:** [shdonde@gmail.com](mailto:shdonde@gmail.com)
+- **LinkedIn:** [LinkedIn Profile]([https://www.linkedin.com/in/yourprofile](https://www.linkedin.com/in/shrinish-donde/))
+- **Google Scholar:** [Google Scholar]([https://www.researchgate.net/profile/Your_Profile](https://scholar.google.com/citations?user=659bzegAAAAJ&hl=en))
 
 ---
 

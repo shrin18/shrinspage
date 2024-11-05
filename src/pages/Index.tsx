@@ -4,7 +4,8 @@ import Publications from "@/components/Publications";
 import Blog from "@/components/Blog";
 import Photography from "@/components/Photography";
 import Books from "@/components/Books";
-import CV from "@/components/CV"; // Import the CV component
+import CV from "@/components/CV";
+import Music from "@/components/Music"; // Import the Music component
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,7 +15,8 @@ const Index = () => {
       <main>
         <Hero />
         <Publications />
-        <CV /> {/* Include the CV component here */}
+        <CV />
+        <Music /> {/* Include the Music component here */}
         <Blog />
         <Photography />
         <Books />

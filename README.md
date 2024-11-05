@@ -10,7 +10,7 @@ Welcome to my research portfolio! This repository showcases my work, publication
 
 ## 📝 About Me
 
-Hello! I'm a researcher with a passion for combining technology with innovative research methods. My work focuses on advancing [computer science](#publications) and engineering by exploring groundbreaking solutions in [robotics](#robotics) and [network simulations](#network-simulations).
+Hello! I'm a researcher with a passion for combining technology with innovative research methods. My work focuses on advancing Telecommunication technologies and working on open source softwares for 5G and 6G technologies. I am interested to work on projects that involve software and are related to Telecommunication.
 
 ---
 

@@ -1,4 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+
+// Define the highlighted countries' ISO codes
+const highlightedCountries = [
+  "SWE", "DNK", "DEU", "AUT", "CZE", "HUN", "POL", "CHE", "NLD", "FRA", "ESP", "HRV"
+];
+
+// Local GeoJSON path for Europe map
+const europeMapUrl = "europe.geojson";
 
 const blogPosts = [
   {
@@ -60,6 +69,34 @@ const Blog = () => {
           >
             For more travel posts, click here
           </a>
+        </div>
+
+        {/* Interactive Map Section */}
+        <div className="mt-16">
+          <h3 className="text-2xl font-semibold text-center mb-4">Countries I’ve Visited in Europe</h3>
+          <ComposableMap projection="geoAzimuthalEqualArea" projectionConfig={{ center: [10, 50], scale: 600 }}>
+            <Geographies geography={europeMapUrl}>
+              {({ geographies }) =>
+                geographies.map((geo) => {
+                  // Check if country is in the highlighted list
+                  const isHighlighted = highlightedCountries.includes(geo.properties.ISO_A3);
+                  return (
+                    <Geography
+                      key={geo.rsmKey}
+                      geography={geo}
+                      fill={isHighlighted ? "#FF5722" : "#ECEFF1"}
+                      stroke="#607D8B"
+                      style={{
+                        default: { outline: "none" },
+                        hover: { fill: "#FFC107", outline: "none" },
+                        pressed: { outline: "none" }
+                      }}
+                    />
+                  );
+                })
+              }
+            </Geographies>
+          </ComposableMap>
         </div>
       </div>
     </section>
